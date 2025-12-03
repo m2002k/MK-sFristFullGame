@@ -1,0 +1,48 @@
+[gd_scene load_steps=4 format=3 uid="uid://b3p42br51jacx"]
+
+[ext_resource type="Script" uid="uid://drhgya214em0i" path="res://scab.gd" id="1_ffe1w"]
+[ext_resource type="PackedScene" uid="uid://reyjs3fq1b3p" path="res://models/scab/maxdamage_scab_low_poly.tscn" id="1_mikux"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_mikux"]
+radius = 0.2
+
+[node name="Scab" type="CharacterBody3D"]
+script = ExtResource("1_ffe1w")
+speed = null
+
+[node name="maxdamage_scab-low-poly" parent="." instance=ExtResource("1_mikux")]
+
+[node name="Skeleton3D" parent="maxdamage_scab-low-poly/ScabArmature" index="0"]
+bones/1/rotation = Quaternion(-0.47758198, 0.13007547, -0.47781178, 0.72573537)
+bones/2/rotation = Quaternion(0.7752712, -0.43385026, 0.41938472, -0.18666863)
+bones/3/position = Vector3(0.003101941, 0.5861822, -0.34287453)
+bones/4/position = Vector3(0.51238495, 0.5861822, -0.5645637)
+bones/5/rotation = Quaternion(0.46894678, 0.73591864, 0.47111857, 0.12868609)
+bones/6/rotation = Quaternion(0.7752705, 0.43385103, -0.41938454, -0.18666951)
+bones/7/position = Vector3(0.0031018893, 0.5861822, 0.342875)
+bones/8/position = Vector3(0.51238483, 0.5861822, 0.5645643)
+bones/9/position = Vector3(0.07789525, 0.77769107, -0.19436494)
+bones/10/position = Vector3(0.07789521, 0.77769107, 0.19436523)
+bones/11/position = Vector3(0.15187985, 0.5617095, 1.146661e-08)
+bones/11/rotation = Quaternion(0.4966733, 0.5033044, -0.49667367, 0.5033048)
+bones/12/rotation = Quaternion(-0.81646717, -9.198735e-09, 6.9430524e-07, 0.5773919)
+bones/13/rotation = Quaternion(-0.2956393, 0.08744885, -0.39321744, 0.86621606)
+bones/14/rotation = Quaternion(-0.42853373, 0.787999, -0.33849236, 0.28432283)
+bones/15/rotation = Quaternion(-0.29515243, -0.06715943, 0.3729894, 0.877071)
+bones/16/rotation = Quaternion(0.42853403, 0.7879987, -0.33849186, -0.28432357)
+bones/17/position = Vector3(0.063599385, 0.19750497, -0.18975094)
+bones/18/position = Vector3(-0.06360002, 0.19750498, -0.18975085)
+bones/19/rotation = Quaternion(0.7088431, -1.1191425e-08, -6.027516e-07, 0.70536625)
+bones/19/scale = Vector3(1, 0.99999994, 0.99999994)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.19999999, 0)
+shape = SubResource("SphereShape3D_mikux")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, -0.1)
+light_color = Color(0, 1, 0, 1)
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+
+[editable path="maxdamage_scab-low-poly"]

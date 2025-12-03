@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dkyk84poeowmy"]
+
+[ext_resource type="Texture2D" uid="uid://drany8h7f81da" path="res://texture/Fence 1.png" id="1_ng6an"]
+
+[resource]
+albedo_texture = ExtResource("1_ng6an")
+refraction_scale = 1.0
+uv1_scale = Vector3(0.1, 0.1, 0.1)
+uv1_triplanar = true
+uv1_triplanar_sharpness = 34.296783
+uv2_triplanar_sharpness = 0.041234583

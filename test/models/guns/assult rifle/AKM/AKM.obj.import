@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bpyjiftl6d654"
+path="res://.godot/imported/AKM.obj-919b237aaf37c86af56795058127c645.mesh"
+
+[deps]
+
+files=["res://.godot/imported/AKM.obj-919b237aaf37c86af56795058127c645.mesh"]
+
+source_file="res://models/guns/assult rifle/AKM/AKM.obj"
+dest_files=["res://.godot/imported/AKM.obj-919b237aaf37c86af56795058127c645.mesh", "res://.godot/imported/AKM.obj-919b237aaf37c86af56795058127c645.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false
